@@ -50,12 +50,8 @@ while (activeNodes.Any())
     {
         if (visitedNodes.ContainsKey(walkableNode.Node))
             continue;
-        //if (visitedNodes.Any(x => x.Node == walkableNode.Node))
-        //    continue;
 
-        //var existingNode = activeNodes.FirstOrDefault(x => x.Node == walkableNode.Node);
         if(!activeNodes.ContainsKey(walkableNode.Node))
-        //if (existingNode == null)
         {
             activeNodes.Add(walkableNode.Node, walkableNode);
             continue;
